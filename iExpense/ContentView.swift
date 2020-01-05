@@ -9,15 +9,15 @@
 import SwiftUI
 
 //User struct
-struct User {
-    var firstName = "Sarvad"
-    var lastName = "Shetty"
+class User: ObservableObject {
+    @Published var firstName = "Sarvad"
+    @Published var lastName = "Shetty"
 }
 
 struct ContentView: View {
     
     //creating an user object
-    @State private var user = User()
+    @ObservedObject private var user = User()
     
     var body: some View {
         VStack {
