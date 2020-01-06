@@ -8,36 +8,35 @@
 
 import SwiftUI
 
-//User struct
-class User: ObservableObject {
-    @Published var firstName = "Sarvad"
-    @Published var lastName = "Shetty"
-}
-
 struct ContentView: View {
     
-    @State private var showingSheet = false
+    @State private var numbers = [Int]()
+    @State private var currentNumber = 1
     
     var body: some View {
-        Button("Show Sheet"){
-            self.showingSheet.toggle()
-        }.sheet(isPresented: $showingSheet) {
-            //sheet contents
-            SecondView(name: "Sarvad")
+        NavigationView {
+            VStack{
+                List{
+                    ForEach(numbers, id: \.self){
+                        Text("\($0)")
+                    }
+                .onDelete(perform: removeRow)
+                }
+                
+                Button("Add number"){
+                    self.numbers.append(self.currentNumber)
+                    self.currentNumber += 1
+                }
+            }
+        .navigationBarItems(leading: EditButton())
         }
+    }
+    
+    func removeRow(at offsets:IndexSet){
+        numbers.remove(atOffsets: offsets)
     }
 }
 
-struct SecondView: View{
-    @Environment(\.presentationMode) var presentationMode
-    var name:String
-    
-    var body: some View {
-        Button("Dismiss sheet"){
-            self.presentationMode.wrappedValue.dismiss()
-        }
-    }
-}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
