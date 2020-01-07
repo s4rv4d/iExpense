@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4001C7A823C4451400C8990D /* ExpenseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4001C7A723C4451400C8990D /* ExpenseItem.swift */; };
+		4001C7AA23C4D96D00C8990D /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4001C7A923C4D96D00C8990D /* AddView.swift */; };
 		40A91B0D23C1B9BD0098EA03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A91B0C23C1B9BD0098EA03 /* AppDelegate.swift */; };
 		40A91B0F23C1B9BD0098EA03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A91B0E23C1B9BD0098EA03 /* SceneDelegate.swift */; };
 		40A91B1123C1B9BD0098EA03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A91B1023C1B9BD0098EA03 /* ContentView.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4001C7A723C4451400C8990D /* ExpenseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseItem.swift; sourceTree = "<group>"; };
+		4001C7A923C4D96D00C8990D /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		40A91B0923C1B9BD0098EA03 /* iExpense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iExpense.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A91B0C23C1B9BD0098EA03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40A91B0E23C1B9BD0098EA03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				40A91B1723C1B9C50098EA03 /* LaunchScreen.storyboard */,
 				40A91B1A23C1B9C50098EA03 /* Info.plist */,
 				40A91B1423C1B9C50098EA03 /* Preview Content */,
+				4001C7A723C4451400C8990D /* ExpenseItem.swift */,
+				4001C7A923C4D96D00C8990D /* AddView.swift */,
 			);
 			path = iExpense;
 			sourceTree = "<group>";
@@ -148,7 +154,9 @@
 			files = (
 				40A91B0D23C1B9BD0098EA03 /* AppDelegate.swift in Sources */,
 				40A91B0F23C1B9BD0098EA03 /* SceneDelegate.swift in Sources */,
+				4001C7AA23C4D96D00C8990D /* AddView.swift in Sources */,
 				40A91B1123C1B9BD0098EA03 /* ContentView.swift in Sources */,
+				4001C7A823C4451400C8990D /* ExpenseItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
